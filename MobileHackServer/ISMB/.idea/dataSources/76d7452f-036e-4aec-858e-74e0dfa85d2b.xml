@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - mydb@manlmdbinstance.c4tepyds5lpd.ap-southeast-1.rds.amazonaws.com">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mydb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="innodb"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="tmp"/>
+    <schema id="8" name="myhackathon"/>
+    <table id="9" parent="1" name="beacon"/>
+    <table id="10" parent="1" name="product"/>
+    <table id="11" parent="1" name="synonym"/>
+    <table id="12" parent="1" name="promotion"/>
+    <table id="13" parent="1" name="promotion_product"/>
+    <table id="14" parent="1" name="relatingproduct"/>
+    <table id="15" parent="1" name="analizedchatlog"/>
+    <table id="16" parent="1" name="chatlog"/>
+    <table id="17" parent="1" name="history"/>
+    <table id="18" parent="1" name="trainingpool"/>
+    <table id="19" parent="1" name="area"/>
+    <table id="20" parent="1" name="weightedhistory"/>
+    <table id="21" parent="1" name="devicetoken"/>
+    <table id="22" parent="1" name="customer"/>
+    <table id="23" parent="1" name="employee"/>
+    <table id="24" parent="1" name="role"/>
+    <table id="25" parent="1" name="status"/>
+    <table id="26" parent="1" name="userrole"/>
+    <table id="27" parent="1" name="userstatus"/>
+    <column id="28" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="29" parent="9" name="areaId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="30" parent="9" name="major">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="31" parent="9" name="minor">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="9" name="uuid">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="33" parent="9" name="areaLocation">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="34" parent="9" name="areaName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="35" parent="9" name="areaWeight">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="36" parent="9" name="x">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="37" parent="9" name="y">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="38" parent="9" name="z">
+      <data-type>double|0</data-type>
+    </column>
+    <key id="39" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="40" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="41" parent="10" name="areaId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="42" parent="10" name="areaLocation">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="43" parent="10" name="areaName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="44" parent="10" name="code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="45" parent="10" name="details">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="46" parent="10" name="imgUrl">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="47" parent="10" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="48" parent="10" name="price">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="49" parent="10" name="areaWeight">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="50" parent="10" name="imgPromotionUrl">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="51" parent="10" name="beaconMinor1">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="52" parent="10" name="beaconMinor2">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="53" parent="10" name="beaconMinor3">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="54" parent="10" name="beaconMinor4">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="55" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="56" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="57" parent="11" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="58" parent="11" name="synonymId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="59" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="60" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="61" parent="12" name="details">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="62" parent="12" name="discountRate">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="63" parent="12" name="endDate">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="64" parent="12" name="startDate">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="65" parent="12" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="66" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="67" parent="13" name="productId">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="68" parent="13" name="promotionId">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="69" parent="13" name="PRIMARY">
+      <columns>productId
+promotionId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="70" parent="14" name="productId1">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="71" parent="14" name="productId2">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="72" parent="14" name="weight">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="73" parent="14" name="PRIMARY">
+      <columns>productId1
+productId2</columns>
+      <primary>1</primary>
+    </key>
+    <column id="74" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="75" parent="15" name="counter">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="76" parent="15" name="status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="77" parent="15" name="userSay">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="78" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="79" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="80" parent="16" name="status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="81" parent="16" name="userSay">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="82" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="83" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="84" parent="17" name="appFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="85" parent="17" name="botFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="86" parent="17" name="date">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="87" parent="17" name="productId">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="88" parent="17" name="productName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="89" parent="17" name="customerAccountId">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="90" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="91" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="92" parent="18" name="userSay">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="93" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="94" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="95" parent="19" name="location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="96" parent="19" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="97" parent="19" name="code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="98" parent="19" name="weight">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="99" parent="19" name="beaconId1">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="100" parent="19" name="beaconId2">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="101" parent="19" name="beaconId3">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="102" parent="19" name="beaconId4">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="103" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="104" parent="20" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="105" parent="20" name="appFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="106" parent="20" name="botFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="107" parent="20" name="customerAccontId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="108" parent="20" name="productId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="109" parent="20" name="weight">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="110" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="111" parent="21" name="token">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="112" parent="21" name="appFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="113" parent="21" name="botFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="114" parent="21" name="customerAccontId">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="115" parent="21" name="PRIMARY">
+      <columns>token</columns>
+      <primary>1</primary>
+    </key>
+    <column id="116" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="117" parent="22" name="appFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="118" parent="22" name="botFbId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="119" parent="22" name="firstName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="120" parent="22" name="lastName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="121" parent="22" name="phone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="122" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="123" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="124" parent="23" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="125" parent="23" name="firstName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="126" parent="23" name="lastName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="127" parent="23" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="128" parent="23" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="129" parent="23" name="role">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="130" parent="23" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="131" parent="23" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="132" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="133" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="134" parent="24" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="135" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="136" parent="25" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="137" parent="25" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="138" parent="25" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="139" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="140" parent="26" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="141" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="142" parent="27" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="143" parent="27" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="144" parent="27" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

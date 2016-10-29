@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ISMB</string>
+    <string name="facebook_app_id">1085390694861076</string>
+    <string name="fb_login_protocol_scheme">fb1085390694861076</string>
+    <string name="estimote_app_id">manlm-work-gmail-com-s-bla-8n9</string>
+    <string name="estimote_app_token">155c8eec055fc514b9a4573f82712732</string>
+
+
+    <string name="err_msg_phone">Số điện thoại phải có 10 đến 13 ký tự từ 0 đến 9</string>
+    <string name="Save">Lưu</string>
+    <string name="EditPhone">Đổi số điện thoại</string>
+    <string name="SavePhoneNote">Vui lòng nhập số điện thoại mà bạn đã đăng kí trên chatbot để truy cập giỏ hàng của bạn</string>
+
+    <string name="title_activity_manage">ISMB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="input">Đổi SĐT</string>
+    <string name="input_content_custominvalidation">Nhập sdt mới</string>
+    <string name="input_hint"></string>
+
+    <string name="cart">Giỏ hàng</string>
+    <string name="change_phone">Đổi số điện thoại</string>
+    <string name="your_location">Vị trí của bạn</string>
+    <string name="sync_data">Cập nhật dữ liệu</string>
+    <string name="log_out">Đăng xuất</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
